@@ -19,10 +19,10 @@ connection.once('open', () => {
 })
 
 const menusRouter = require('./routes/menus');
-const locationsRouter = require('./routes/locations');
+// const locationsRouter = require('./routes/locations');
 
 app.use('/menus', menusRouter);
-app.use('/locations', locationsRouter);
+// app.use('/locations', locationsRouter);
 
 app.listen(port, () => {
 	console.log(`Server is running on port: ${port}`);

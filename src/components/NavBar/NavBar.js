@@ -1,5 +1,6 @@
-import React, { Component } from "./node_modules/react";
-import { Link } from "./node_modules/react-router-dom";
+import React, { Component } from "react";
+import { Link } from 'react-router-dom';
+import { FaAlignRight } from "react-icons/fa";
 
 export default class Navbar extends Component {
   state = {
