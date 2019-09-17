@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { Fragment } from "react";
+
+const hardcodedMenu = ["Food 1", "Food 2"];
 
 const MenuCard = props => {
-  return (
-    <>
-      <h2>
-        Hi
-      </h2>
+  const getMenuOptions = () => {
+    // TODO: make API call here
+    return hardcodedMenu;
+  };
 
-      <div>
-        This is a menu with some crazy good food.
-      </div>
-    </>
+  const menuItems = getMenuOptions().map(item => <li key={item}>{item}</li>);
+
+  return (
+    <Fragment>
+      <h2>Hi</h2>
+
+      <ul>{menuItems}</ul>
+    </Fragment>
   );
 };
 
