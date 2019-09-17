@@ -1,9 +1,19 @@
 import React, { Fragment } from "react";
 import MenuSection from "./MenuSection";
 
+// TODO: destroy
 const hardcodedMenu = {
-  appetizers: ["Egg Roll", "Soup"],
-  chicken: ["Some chicken"]
+  appetizers: [
+    { name: "City Egg Roll", price: 1 },
+    { name: "City Soup", price: 1 }
+  ],
+  chicken: [
+    {
+      name: "City Chicken",
+      price: 8,
+      description: "whatever thai chicken is like"
+    }
+  ]
 };
 
 const getMenuOptions = () => {

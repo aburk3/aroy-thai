@@ -4,7 +4,7 @@ import MenuItem from "./MenuItem";
 const MenuSection = props => {
   // TODO: use database id for key instead
   const menuItems = props.items.map(item => (
-    <MenuItem item={item} key={item} />
+    <MenuItem item={item} key={item.name} />
   ));
   return (
     <Fragment>
