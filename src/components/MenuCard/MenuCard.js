@@ -1,17 +1,38 @@
-import React from 'react';
+import React, { Fragment } from "react";
+import MenuSection from "./MenuSection";
+
+// TODO: destroy
+const hardcodedMenu = {
+  appetizers: [
+    { name: "City Egg Roll", price: 1 },
+    { name: "City Soup", price: 1 }
+  ],
+  chicken: [
+    {
+      name: "City Chicken",
+      price: 8,
+      description: "whatever thai chicken is like"
+    }
+  ]
+};
+
+const getMenuOptions = () => {
+  // TODO: make API call here
+  return hardcodedMenu;
+};
 
 const MenuCard = props => {
-  return (
-    <>
-      <h2>
-        Hi
-      </h2>
+  const menuOptions = getMenuOptions();
 
-      <div>
-        This is a menu with some crazy good food.
-      </div>
-    </>
-  );
+  const menuSections = Object.keys(menuOptions).map(category => (
+    <MenuSection
+      items={menuOptions[category]}
+      name={category}
+      key={category}
+    ></MenuSection>
+  ));
+
+  return <Fragment>{menuSections}</Fragment>;
 };
 
 export default MenuCard;
