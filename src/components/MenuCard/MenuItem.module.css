@@ -1,0 +1,20 @@
+.List {
+  display: flex;
+}
+
+.First {
+  margin-right: 0.5em;
+  flex: 1;
+  display: flex;
+}
+
+.Price {
+  text-align: right;
+  flex: 0 0 4em;
+}
+
+.First:after {
+  content: "";
+  border-bottom: dashed 1px black;
+  flex: 1;
+}
