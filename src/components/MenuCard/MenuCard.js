@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import MenuSection from "./MenuSection";
+import MenuSection from "./MenuSection/MenuSection";
 
 // TODO: destroy
 const hardcodedMenu = {
