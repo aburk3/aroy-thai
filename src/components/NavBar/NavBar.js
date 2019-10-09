@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.module.css";
 
+import { Card } from "react-bootstrap";
+
 export default class NavBar extends Component {
   render() {
     return (
@@ -13,7 +15,7 @@ export default class NavBar extends Component {
           <ul className="navbar-nav mr-auto">
             <li className="navbar-item">
               <Link to="/location" className="nav-link">
-                location
+                Location
               </Link>
             </li>
           </ul>
