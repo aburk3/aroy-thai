@@ -9,6 +9,7 @@ const NavigationItems = () => (
       {/* Unsure whether this should be 'home' or 'main menu' or something else... */}
       Home
     </NavigationItem>
+    <NavigationItem link="/menu">Menu</NavigationItem>
     <NavigationItem link="/location">Location/Hours</NavigationItem>
   </ul>
 );
