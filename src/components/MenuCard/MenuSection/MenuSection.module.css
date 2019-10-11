@@ -15,10 +15,10 @@
 }
 .Leaders span:first-child {
   padding-right: 0.33em;
-  background: white;
+  background: #fffff0;
 }
 .Leaders span + span {
   float: right;
   padding-left: 0.33em;
-  background: white;
+  background: #fffff0;
 }
