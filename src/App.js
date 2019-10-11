@@ -7,6 +7,7 @@ import Layout from "./hoc/Layout/Layout";
 import Toolbar from "./components/Navigation/Toolbar/Toolbar";
 import MenuCard from "./components/MenuCard/MenuCard";
 import Location from "./components/Location/Location";
+import LandingPage from "./components/LandingPage/LandingPage";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Layout>
           <Toolbar />
           <br />
-          <Route path="/" exact component={MenuCard} />
+          <Route path="/" exact component={LandingPage} />
+          <Route path="/menu" exact component={MenuCard} />
           {/* <Route path="/edit/:id" component={EditMenuItem} /> */}
           {/* <Route path="/menuitem" component={CreateMenuItem} /> */}
           <Route path="/location" exact component={Location} />
