@@ -8,7 +8,7 @@ const NavigationItems = () => (
     <NavigationItem link="/" exact>
       Aroy Thai
     </NavigationItem>
-    <NavigationItem link="/locationandhours">Location/Hours</NavigationItem>
+    <NavigationItem link="/location">Location/Hours</NavigationItem>
   </ul>
 );
 
