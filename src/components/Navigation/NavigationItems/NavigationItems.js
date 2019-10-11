@@ -6,7 +6,8 @@ import NavigationItem from "./NavigationItem/NavigationItem";
 const NavigationItems = () => (
   <ul className={classes.NavigationItems}>
     <NavigationItem link="/" exact>
-      Aroy Thai
+      {/* Unsure whether this should be 'home' or 'main menu' or something else... */}
+      Home
     </NavigationItem>
     <NavigationItem link="/location">Location/Hours</NavigationItem>
   </ul>
