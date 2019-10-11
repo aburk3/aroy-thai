@@ -3,11 +3,11 @@ import MenuSection from "./MenuSection/MenuSection";
 
 // TODO: destroy
 const hardcodedMenu = {
-  appetizers: [
+  Appetizers: [
     { name: "City Egg Roll", price: 1 },
     { name: "City Soup", price: 1 }
   ],
-  chicken: [
+  Chicken: [
     {
       name: "City Chicken",
       price: 8,
