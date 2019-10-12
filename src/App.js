@@ -8,6 +8,7 @@ import Toolbar from "./components/Navigation/Toolbar/Toolbar";
 import MenuCard from "./components/MenuCard/MenuCard";
 import Location from "./components/Location/Location";
 import LandingPage from "./components/LandingPage/LandingPage";
+import ExternalLinks from "./components/ExternalLinks/ExternalLinks";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           {/* <Route path="/edit/:id" component={EditMenuItem} /> */}
           {/* <Route path="/menuitem" component={CreateMenuItem} /> */}
           <Route path="/location" exact component={Location} />
+          <ExternalLinks />
         </Layout>
       </div>
     </Router>
