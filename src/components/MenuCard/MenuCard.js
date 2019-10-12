@@ -26,11 +26,13 @@ const MenuCard = props => {
   const menuOptions = getMenuOptions();
 
   const menuSections = Object.keys(menuOptions).map(category => (
-    <MenuSection
-      items={menuOptions[category]}
-      name={category}
-      key={category}
-    ></MenuSection>
+    <div className="row">
+      <MenuSection
+        items={menuOptions[category]}
+        name={category}
+        key={category}
+      ></MenuSection>
+    </div>
   ));
 
   return <Fragment>{menuSections}</Fragment>;

@@ -10,8 +10,12 @@ const MenuSection = props => {
   ));
   return (
     <Fragment>
-      <h2>{props.name}</h2>
-      <ul className={classes.Leaders}>{menuItems}</ul>
+      <div className="col"></div>
+      <div className="col-6">
+        <h2>{props.name}</h2>
+        <ul className={classes.Leaders}>{menuItems}</ul>
+      </div>
+      <div className="col"></div>
     </Fragment>
   );
 };

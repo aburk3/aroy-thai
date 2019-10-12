@@ -3,8 +3,8 @@ import classes from "./Location.module.css";
 
 const Location = props => {
   return (
-    <>
-      <div>
+    <div>
+      <div className={classes.Center}>
         <h2>
           <u>Location</u>
         </h2>
@@ -15,7 +15,7 @@ const Location = props => {
       <br />
       <br />
       <div>
-        <h2>
+        <h2 className={classes.Center}>
           <u>Hours</u>
         </h2>
         <table className={classes.Table}>
@@ -45,7 +45,7 @@ const Location = props => {
           </tr>
         </table>
       </div>
-    </>
+    </div>
   );
 };
 
