@@ -86,8 +86,8 @@
   height: 100%;
 }
 
-.Logo {
-  height: 80%;
+.Contact a {
+  color: black;
 }
 
 @media (max-width: 499px) {
