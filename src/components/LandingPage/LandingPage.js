@@ -9,6 +9,19 @@ const LandingPage = props => {
           <u>Landing Page</u>
         </h2>
       </div>
+
+      <section>
+        <div class="container">
+
+          <ul>
+
+            <li>column </li>
+            <li>column </li>
+            <li>column </li>
+
+          </ul>
+        </div>
+      </section>
     </>
   );
 };
